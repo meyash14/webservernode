@@ -20,6 +20,14 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About Me',
+        name: 'Andrew Mead'
+    })
+})
+
+
 
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
